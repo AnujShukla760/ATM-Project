@@ -46,6 +46,7 @@ public class AtmMainClass {
                atm1.withdrawAmount(amount);
            } else if (service.equals("4")) {
                System.out.println("THANKS FOR USING TECH ATM SERVICES");
+             //  break;
            } else  {
                System.out.println("PLEASE ENTER A VALID SERVICE  ");
 
