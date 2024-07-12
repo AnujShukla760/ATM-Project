@@ -2,7 +2,7 @@ package org.example;
 
 public class ATM {
     private double balance;
-    public double amount;
+    private double amount;
     private double withdraw;
 
 
@@ -35,12 +35,6 @@ public class ATM {
         this.amount = amount;
     }
 
-    @Override
-    public String toString() {
-        return "ATM{" +
-                "balance=" + balance +
-                ", amount=" + amount +
-                ", withdraw=" + withdraw +
-                '}';
+
     }
-}
+

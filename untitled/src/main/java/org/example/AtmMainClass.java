@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class AtmMainClass {
     public static void main(String[] args) throws AtmException {
        ATM m=new ATM();
-     //  DBConnect d=new DBConnect();
+//       DBConnect d=new DBConnect();
        AtmMainClass a=new AtmMainClass();
        AtmOperations1 atm1=new AtmOperations1();
 
@@ -46,9 +46,10 @@ public class AtmMainClass {
                atm1.withdrawAmount(amount);
            } else if (service.equals("4")) {
                System.out.println("THANKS FOR USING TECH ATM SERVICES");
-           } else {
-               System.out.println("PLEASE ENTER VALID SERVICE");
-//               System.out.println("enter the final amount shown ");
+           } else  {
+               System.out.println("PLEASE ENTER A VALID SERVICE  ");
+
+//               System.out.println("ENTER THE FINAL AMOUNT ");
 //               String amt=scanner.nextLine();
 //               atm1.amount=Integer.parseInt(amt);
 //
@@ -70,7 +71,7 @@ public class AtmMainClass {
 //               } catch (SQLException e) {
 //                   e.printStackTrace();
 //                   System.out.println("Failed to connect to the H2 database..");
-               //}
+//               }
            }}
        }else{
            throw new AtmException("INVALID ATM NUMBER OR ATM PIN");
